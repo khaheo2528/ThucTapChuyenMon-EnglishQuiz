@@ -7,7 +7,7 @@
     android:background="@color/backgroundColor"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
+    <
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -23,7 +23,7 @@
                 android:id="@+id/coinImage"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:src="@drawable/coin" />
+                android:src="" />
 
             <TextView
                 android:id="@+id/coinText"
@@ -60,7 +60,7 @@
                 android:textSize="20sp" />
 
         </RelativeLayout>
-    </androidx.appcompat.widget.Toolbar>
+    </android.support.v7>
 
     <View
         android:layout_width="match_parent"
