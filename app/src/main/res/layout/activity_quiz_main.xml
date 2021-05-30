@@ -43,9 +43,10 @@
                 android:layout_toLeftOf="@+id/timeText"
                 android:layout_toRightOf="@+id/coinText"
                 android:gravity="center"
+                android:textStyle="bold"
                 android:text="@string/app_name"
-                android:textColor="@color/white"
-                android:textSize="25sp" />
+                android:textColor="@color/black"
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/timeText"
@@ -67,8 +68,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight=".5"
-        android:layout_marginTop="15dp"
+        android:layout_weight=".6"
+        android:layout_marginTop="20dp"
         android:background="@color/white"
         android:orientation="vertical">
 
@@ -80,7 +81,7 @@
             android:gravity="center"
             android:text="@string/question"
             android:textColor="@color/grey"
-            android:textSize="18sp" />
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/resultText"
@@ -103,18 +104,16 @@
         <info.hoang8f.widget.FButton
             android:id="@+id/buttonA"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="36dp"
             android:layout_margin="10dp"
-            android:onClick="buttonA"
             android:text=""
-            android:textColor="@color/grey"></info.hoang8f.widget.FButton>
+            android:textColor="@color/grey"/>
 
         <info.hoang8f.widget.FButton
             android:id="@+id/buttonB"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="36dp"
             android:layout_margin="10dp"
-            android:onClick="buttonB"
             android:text=""
             android:textColor="@color/grey" />
 
@@ -122,22 +121,32 @@
         <info.hoang8f.widget.FButton
             android:id="@+id/buttonC"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="36dp"
             android:layout_margin="10dp"
-            android:onClick="buttonC"
             android:text=""
             android:textColor="@color/grey" />
 
         <info.hoang8f.widget.FButton
             android:id="@+id/buttonD"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="36dp"
             android:layout_margin="10dp"
-            android:onClick="buttonD"
             android:text=""
             android:textColor="@color/grey" />
 
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="150dp"
+            android:src="@drawable/cute" />
     </LinearLayout>
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/red"
+        android:text="Made by Zed"
+        android:textSize="14dp" />
 
 </LinearLayout>
