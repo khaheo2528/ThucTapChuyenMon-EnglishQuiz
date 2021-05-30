@@ -134,11 +134,6 @@
             android:text=""
             android:textColor="@color/grey" />
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="130dp"
-            android:layout_marginLeft="150dp"
-            android:src="@drawable/cute" />
     </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
