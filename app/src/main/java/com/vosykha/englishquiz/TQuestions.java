@@ -2,7 +2,7 @@ package com.vosykha.englishquiz;
 
 import android.app.Activity;
 
-public class Questions extends Activity {
+public class TQuestions extends Activity {
     private int id;
     private String question;
     private String opta;
@@ -11,7 +11,7 @@ public class Questions extends Activity {
     private String optd;
     private String answer;
 
-    public Questions(String q, String oa, String ob, String oc, String od, String ans) {
+    public TQuestions(String q, String oa, String ob, String oc, String od, String ans) {
         question = q;
         opta = oa;
         optb = ob;
@@ -20,7 +20,7 @@ public class Questions extends Activity {
         answer = ans;
     }
 
-    public Questions() {
+    public TQuestions() {
         id = 0;
         question = "";
         opta = "";
