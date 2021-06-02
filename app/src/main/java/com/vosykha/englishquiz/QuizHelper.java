@@ -1,10 +1,13 @@
 package com.vosykha.englishquiz;
 
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class QuizHelper extends SQLiteOpenHelper {
 
@@ -131,10 +134,145 @@ public class QuizHelper extends SQLiteOpenHelper {
         //c35
         arrayList.add(new TQuestions("the refresh ________", "websites ", "address ", "life ", "button", "button"));
 
-        //c3
-        arrayList.add(new TQuestions("", "", "", "", "", ""));
-        //c3
-        arrayList.add(new TQuestions("", "", "", "", "", ""));
 
+        //unit 4
+        //c36
+        arrayList.add(new TQuestions("type ________ a formula", "in", "record", "by", "key", "in"));
+        //c37
+        arrayList.add(new TQuestions("retrieve a(n) ________", "in", "record", "by", "key", "record"));
+        //c38
+        arrayList.add(new TQuestions("multiply ________", "in", "record", "by", "key", "by"));
+        //c39
+        arrayList.add(new TQuestions("primary ________", "in", "record", "by", "key", "key"));
+        //c40
+        arrayList.add(new TQuestions("query a(n) ________", "database", "permissions", "smoothly", "tablet", "database"));
+        //c41
+        arrayList.add(new TQuestions("set ________", "database", "permissions", "smoothly", "tablet", "permissions"));
+        //c42
+        arrayList.add(new TQuestions("run ________", "database", "permissions", "smoothly", "tablet", "smoothly"));
+        //c43
+        arrayList.add(new TQuestions("graphics ________", "database", "permissions", "smoothly", "tablet", "tablet"));
+        //c44
+        arrayList.add(new TQuestions("something you put on your head to listen and speak to other people over the internet ________", "headset", "jam", "minus", "form ", "headset"));
+        //c44
+        arrayList.add(new TQuestions("a problem that happens when paper gets stuck in a printer ________", "headset", "jam", "minus", "form ", "jam"));
+        //c44
+        arrayList.add(new TQuestions("a word for the ‘–’ symbol in formulae ________", "headset", "jam", "minus", "form ", "minus"));
+        //c44
+        arrayList.add(new TQuestions("a database object that makes it easy to enter data ________", "headset", "jam", "minus", "form ", "form"));
+        //c45
+        arrayList.add(new TQuestions("a line of cells from top to bottom of a worksheet in a spreadsheet ________", "column", "deploy", "divide", "multifunction printer", "column"));
+        //c46
+        arrayList.add(new TQuestions("remotely install new software on a group of computers ________", "column", "deploy", "divide", "multifunction printer", "deploy"));
+        //c47
+        arrayList.add(new TQuestions("a word for the ‘/’ symbol in formulae ________", "column", "deploy", "divide", "multifunction printer", "divide"));
+        //c48
+        arrayList.add(new TQuestions("a device that prints, scans and copies ________", "column", "deploy", "divide", "multifunction printer", "multifunction printer"));
+
+        //unit 5
+        //c49
+        arrayList.add(new TQuestions("shared ________", "hosting ", "fee ", "warranty ", "pricing ", "hosting "));
+        //c50
+        arrayList.add(new TQuestions("monthly ________", "hosting ", "fee ", "warranty ", "pricing ", "fee "));
+        //c51
+        arrayList.add(new TQuestions("extended ________", "hosting ", "fee ", "warranty ", "pricing ", "warranty "));
+        //c52
+        arrayList.add(new TQuestions("traditional ________", "hosting ", "fee ", "warranty ", "pricing ", "pricing "));
+        //c53
+        arrayList.add(new TQuestions("user ________", "guide ", "address ", "reader ", "compatibility", "guide "));
+        //c54
+        arrayList.add(new TQuestions("IP ________", "guide ", "address ", "reader ", "compatibility", "address "));
+        //c55
+        arrayList.add(new TQuestions("card ________", "guide ", "address ", "reader ", "compatibility", "reader "));
+        //c56
+        arrayList.add(new TQuestions("file ________", "guide ", "address ", "reader ", "compatibility", "compatibility"));
+        //c57
+        arrayList.add(new TQuestions("The freemium plan is ________ expensive than the premium plan.", "less", "to", "were", "what", "less"));
+        //c58
+        arrayList.add(new TQuestions("I think it’s best ________ buy more computers. Repairing old ones won’t help.", "less", "to", "were", "what", "to"));
+        //c59
+        arrayList.add(new TQuestions("You bought some batteries? How much ________ they in total?", "less", "to", "were", "what", "were"));
+        //c60
+        arrayList.add(new TQuestions("Do you know ________ the cost is?", "less", "to", "were", "what", "what"));
+        //đáp án có thể sai :3 mong người dùng thông cảm
+        //unit 6
+        //c61
+        arrayList.add(new TQuestions("As well as our online stores, we also still have a few bricks and ________ shops.", "mortar", "encryption", "document", "remote ", "mortar"));
+        //c62
+        arrayList.add(new TQuestions("For security, I think we need ________ of all our messages so that no one else can read them.", "mortar", "encryption", "document", "remote ", "encryption"));
+        //c63
+        arrayList.add(new TQuestions("I think we need a(n) ________ management system to handle all our scanned paperwork and word processed files.", "mortar", "encryption", "document", "remote ", "document"));
+        //c64
+        arrayList.add(new TQuestions("In our video conference, the ________ participants will be speaking with us from two overseas countries.", "mortar", "encryption", "document", "remote ", "remote"));
+        //c65
+        arrayList.add(new TQuestions("Our system needs speech-to-________ capability so that we can write emails and messages by speaking into a microphone.", "text ", "compression ", "integrate ", "field", "text "));
+        //c66
+        arrayList.add(new TQuestions("We can save bandwidth by using ________. That way, the data we send is smaller and we don’t lose any information.", "text ", "compression ", "integrate ", "field", "compression "));
+        //c67
+        arrayList.add(new TQuestions("When we design an e-commerce system, we have to ________ several different components so that they work together well.", "text ", "compression ", "integrate ", "field", "integrate "));
+        //c68
+        arrayList.add(new TQuestions("You can pay using our near ________ communication (NFC) system.", "text ", "compression ", "integrate ", "field", "field"));
+        //c69
+        arrayList.add(new TQuestions("a small bit of data that websites put on your computer ________","cookie", "local participants", "microblogging", "tagging","cookie"));
+        //c70
+        arrayList.add(new TQuestions("the people in the same place as you in a video conferencing set-up ________","cookie", "local participants", "microblogging", "tagging","local participants"));
+        //c71
+        arrayList.add(new TQuestions("a system for sending only very short messages from computers ________","cookie", "local participants", "microblogging", "tagging","microblogging"));
+        //c72
+        arrayList.add(new TQuestions("adding labels to files such as photos so that they are easy to find in a search ________","cookie", "local participants", "microblogging", "tagging","tagging"));
+        //c73
+        arrayList.add(new TQuestions("a standard way of doing something ________","cookie", "method", "premises ", "component","method"));
+        //c74
+        arrayList.add(new TQuestions("the building that a company uses ________","procedure", "method", "premises ", "tagging","premises "));
+        //c75
+        arrayList.add(new TQuestions("a small part of a bigger system ________","procedure", "method", "microblogging", "component","component"));
+
+        this.addAllQuestions(arrayList);
+    }
+
+    private void addAllQuestions(ArrayList<TQuestions> AllQuestions){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.beginTransaction();
+        try {
+            ContentValues values = new ContentValues();
+            for (TQuestions question: AllQuestions){
+                values.put(QUESTION, question.getQuestion());
+                values.put(OPTA, question.getOptA());
+                values.put(OPTB, question.getOptB());
+                values.put(OPTC, question.getOptC());
+                values.put(OPTD, question.getOptD());
+                values.put(ANSWER, question.getAnswer());
+                db.insert(TABLE_NAME, null, values);
+            }
+            db.setTransactionSuccessful();
+        } finally {
+            db.endTransaction();
+            db.close();
+        }
+    }
+
+    List<TQuestions> getAllOfTheQuestions(){
+        List<TQuestions> questionsList = new ArrayList<>();
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.beginTransaction();
+        String coloumn[] = {UID, QUESTION, OPTA, OPTB, OPTC, OPTD, ANSWER};
+        Cursor cursor = db.query(TABLE_NAME, coloumn, null, null, null, null, null);
+
+        while (cursor.moveToNext()){
+            TQuestions question = new TQuestions();
+            question.setId(cursor.getInt(0));
+            question.setQuestion(cursor.getString(1));
+            question.setOptA(cursor.getString(2));
+            question.setOptB(cursor.getString(3));
+            question.setOptC(cursor.getString(4));
+            question.setOptD(cursor.getString(5));
+            question.setAnswer(cursor.getString(6));
+            questionsList.add(question);
+        }
+        db.setTransactionSuccessful();
+        db.endTransaction();
+        cursor.close();
+        db.close();
+        return questionsList;
     }
 }
