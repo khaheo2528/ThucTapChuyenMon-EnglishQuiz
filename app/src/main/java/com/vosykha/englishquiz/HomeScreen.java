@@ -22,7 +22,7 @@ import java.util.Arrays;
 import info.hoang8f.widget.FButton;
 
 public class HomeScreen extends AppCompatActivity{
-    FButton playGame,quit;
+    FButton playGame,quit,btnMore;
     TextView tQ;
 
 
@@ -93,6 +93,7 @@ public class HomeScreen extends AppCompatActivity{
         //khởi tạo
         playGame =(FButton)findViewById(R.id.playGame);
         quit = (FButton) findViewById(R.id.quit);
+        btnMore = (FButton) findViewById(R.id.btnMore);
         tQ = (TextView)findViewById(R.id.tQ);
         btnLoginFacebook = (LoginButton) findViewById(R.id.btnLoginFacebook);
 
@@ -126,5 +127,13 @@ public class HomeScreen extends AppCompatActivity{
             }
         });
 
+        btnMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeScreen.this,ListDatabase.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 }
