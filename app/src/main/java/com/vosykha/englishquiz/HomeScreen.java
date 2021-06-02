@@ -39,6 +39,7 @@ public class HomeScreen extends AppCompatActivity{
         initView();
         setupAction();
         setupLoginFacebook();
+
     }
 
     @Override
@@ -59,7 +60,6 @@ public class HomeScreen extends AppCompatActivity{
             @Override
             public void onCancel() {
                 Log.d(TAG_FACEBOOK_LOGIN, "Login cancelled");
-
             }
 
             @Override
@@ -70,7 +70,6 @@ public class HomeScreen extends AppCompatActivity{
 
 
         fbCallbackManager = CallbackManager.Factory.create();
-
         LoginManager.getInstance().registerCallback(fbCallbackManager,
                 new FacebookCallback<LoginResult>() {
                     @Override
@@ -90,7 +89,6 @@ public class HomeScreen extends AppCompatActivity{
                 });
 
     }
-
     private void initView() {
         //khởi tạo
         playGame =(FButton)findViewById(R.id.playGame);
@@ -117,6 +115,7 @@ public class HomeScreen extends AppCompatActivity{
                 Intent intent = new Intent(HomeScreen.this,MainQuizActivity.class);
                 startActivity(intent);
                 finish();
+
             }
         });
         //Quit button- nút thoát
