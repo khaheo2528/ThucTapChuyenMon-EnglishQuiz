@@ -28,6 +28,14 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/btnLoginFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_margin="25dp"/>
+
         <info.hoang8f.widget.FButton
             android:id="@+id/playGame"
             android:layout_width="match_parent"

@@ -36,4 +36,10 @@ dependencies {
     //noinspection GradleCompatible
     implementation 'info.hoang8f:fbutton:1.0.5'
 
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+
+
+
 }
+
+apply plugin: 'com.android.application'

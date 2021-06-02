@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "985552256172",
+    "project_id": "englishquiz-3c6c3",
+    "storage_bucket": "englishquiz-3c6c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985552256172:android:108a7e9b86ef5fc8913309",
+        "android_client_info": {
+          "package_name": "com.vosykha.englishquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985552256172-oe7gqk2ip22qkhtl7torfd84cg8udii9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnd6gIUHyr_1TffDcgzvMPt1yR16CFTwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985552256172-oe7gqk2ip22qkhtl7torfd84cg8udii9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
