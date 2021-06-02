@@ -146,6 +146,55 @@ public class MainQuizActivity extends AppCompatActivity {
             gameLostPlayAgain();
         }
     }
+    //thiết lập sự kiện cho button B
+    public void buttonB(View view){
+        //so sánh lựa chọn với kết quả nếu đúng nút sẽ đổi màu xanh
+        if(currentQuestion.getOptA().equals(currentQuestion.getAnswer())){
+            buttonA.setButtonColor(ContextCompat.getColor(getApplicationContext(),R.color.lightGreen));
+            //kiểm trả nếu người dùng không vượt quá giới hạn hàng đợi
+            if (qid <list.size()-1){
+                disableButton();
+                correctDialog();
+            }
+            else{
+                gameWon();
+            }
+        }
+        else {
+            gameLostPlayAgain();
+        }
+    }
+
+    public void buttonC(View view) {
+        if (currentQuestion.getOptC().equals(currentQuestion.getAnswer())) {
+            buttonC.setButtonColor(ContextCompat.getColor(getApplicationContext(),R.color.lightGreen));
+            if (qid < list.size() - 1) {
+                disableButton();
+                correctDialog();
+            } else {
+                gameWon();
+            }
+        } else {
+
+            gameLostPlayAgain();
+        }
+    }
+
+    public void buttonD(View view){
+            if (currentQuestion.getOptD().equals(currentQuestion.getAnswer())) {
+                buttonD.setButtonColor(ContextCompat.getColor(getApplicationContext(),R.color.lightGreen));
+                if (qid < list.size() - 1) {
+                    disableButton();
+                    correctDialog();
+                } else {
+                    gameWon();
+                }
+            } else {
+                gameLostPlayAgain();
+            }
+    }
+
+
 
     private void gameLostPlayAgain() {
         Intent intent = new Intent(this, PlayAgain.class);
@@ -165,6 +214,32 @@ public class MainQuizActivity extends AppCompatActivity {
         finish();
 
     }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        countDownTimer.start();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        countDownTimer.cancel();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        countDownTimer.cancel();
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, HomeScreen.class);
+        startActivity(intent);
+        finish();
+    }
+    
 
     private void correctDialog() {
         final Dialog dialogCorrect = new Dialog(MainQuizActivity.this);
