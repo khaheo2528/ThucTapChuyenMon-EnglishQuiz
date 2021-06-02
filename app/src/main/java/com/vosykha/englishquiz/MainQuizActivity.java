@@ -116,6 +116,7 @@ public class MainQuizActivity extends AppCompatActivity {
         buttonC.setText(currentQuestion.getOptC());
         buttonD.setText(currentQuestion.getOptD());
 
+
         timeValue = 20;
 
         //đặt time up cho cancel và start
@@ -149,8 +150,8 @@ public class MainQuizActivity extends AppCompatActivity {
     //thiết lập sự kiện cho button B
     public void buttonB(View view){
         //so sánh lựa chọn với kết quả nếu đúng nút sẽ đổi màu xanh
-        if(currentQuestion.getOptA().equals(currentQuestion.getAnswer())){
-            buttonA.setButtonColor(ContextCompat.getColor(getApplicationContext(),R.color.lightGreen));
+        if(currentQuestion.getOptB().equals(currentQuestion.getAnswer())){
+            buttonB.setButtonColor(ContextCompat.getColor(getApplicationContext(),R.color.lightGreen));
             //kiểm trả nếu người dùng không vượt quá giới hạn hàng đợi
             if (qid <list.size()-1){
                 disableButton();
@@ -239,7 +240,7 @@ public class MainQuizActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
-    
+
 
     private void correctDialog() {
         final Dialog dialogCorrect = new Dialog(MainQuizActivity.this);

@@ -106,6 +106,7 @@
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:layout_margin="10dp"
+            android:onClick="buttonA"
             android:text=""
             android:textColor="@color/grey"/>
 
@@ -114,6 +115,7 @@
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:layout_margin="10dp"
+            android:onClick="buttonB"
             android:text=""
             android:textColor="@color/grey" />
 
@@ -123,6 +125,7 @@
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:layout_margin="10dp"
+            android:onClick="buttonC"
             android:text=""
             android:textColor="@color/grey" />
 
@@ -131,6 +134,7 @@
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:layout_margin="10dp"
+            android:onClick="buttonD"
             android:text=""
             android:textColor="@color/grey" />
 
