@@ -153,13 +153,13 @@ public class QuizHelper extends SQLiteOpenHelper {
         //c43
         arrayList.add(new TQuestions("graphics ________", "database", "permissions", "smoothly", "tablet", "tablet"));
         //c44
-        arrayList.add(new TQuestions("something you put on your head to listen and speak to other people over the internet ________", "headset", "jam", "minus", "form ", "headset"));
+        arrayList.add(new TQuestions("something you put on your head to listen and speak to other people over the internet ________", "headset", "jam", "minus", "form", "headset"));
         //c44
-        arrayList.add(new TQuestions("a problem that happens when paper gets stuck in a printer ________", "headset", "jam", "minus", "form ", "jam"));
+        arrayList.add(new TQuestions("a problem that happens when paper gets stuck in a printer ________", "headset", "jam", "minus", "form", "jam"));
         //c44
-        arrayList.add(new TQuestions("a word for the ‘–’ symbol in formulae ________", "headset", "jam", "minus", "form ", "minus"));
+        arrayList.add(new TQuestions("a word for the ‘–’ symbol in formulae ________", "headset", "jam", "minus", "form", "minus"));
         //c44
-        arrayList.add(new TQuestions("a database object that makes it easy to enter data ________", "headset", "jam", "minus", "form ", "form"));
+        arrayList.add(new TQuestions("a database object that makes it easy to enter data ________", "headset", "jam", "minus", "form", "form"));
         //c45
         arrayList.add(new TQuestions("a line of cells from top to bottom of a worksheet in a spreadsheet ________", "column", "deploy", "divide", "multifunction printer", "column"));
         //c46
