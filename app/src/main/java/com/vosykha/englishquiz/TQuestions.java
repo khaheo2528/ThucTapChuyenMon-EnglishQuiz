@@ -11,7 +11,7 @@ public class TQuestions extends Activity {
     private String optd;
     private String answer;
 
-    public TQuestions(String q, String oa, String ob, String oc, String od, String ans) {
+    public TQuestions(int id, String q, String oa, String ob, String oc, String od, String ans) {
         question = q;
         opta = oa;
         optb = ob;
@@ -82,4 +82,9 @@ public class TQuestions extends Activity {
         answer = ans;
     }
 
+    @Override
+    public String toString() {
+        return this.id + " - " + this.question +" - " + this.opta +" - " + this.optb +" - " + this.optc +" - " + this.optd + " - " + this.answer;
+
+    }
 }
