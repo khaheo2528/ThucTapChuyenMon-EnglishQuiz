@@ -14,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -154,11 +155,10 @@ public class ListDatabase extends AppCompatActivity {
     }
 
     @Override
-    public boolean onContextItemSelected(MenuItem item) {
+    public boolean onContextItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.mnEdit){
             if(selectedTQuestions != null){
-                Intent intent = new Intent(ListDatabase.this,
-                        EditActivityProduct.class);
+                Intent intent = new Intent(ListDatabase.this, EditActivityProduct.class);
                 startActivity(intent);
             }
         }

@@ -11,9 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".ListDatabase">
 
-        </activity>
+        <activity android:name=".ListDatabase"/>
+        <activity android:name=".add_edit.EditActivityProduct"/>
+        <activity android:name=".add_edit.AddActivityProduct"/>
+
         <activity android:name=".HomeScreen">
 
                 <intent-filter>

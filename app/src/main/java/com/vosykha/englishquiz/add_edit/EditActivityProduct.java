@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.vosykha.englishquiz.ListDatabase;
@@ -15,15 +16,15 @@ import com.vosykha.englishquiz.R;
 public class EditActivityProduct extends AppCompatActivity {
 
     EditText edtquestion, edtOptA, edtOptB, edtOptC, edtOptD, edtAnswer;
-    Button btnOk,btnCancel;
+    Button btnEdit,btnCancel;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.custom_dialog_edit);
-        
         addViews();
         addEvents();
+
     }
 
     private void addEvents() {
@@ -35,7 +36,7 @@ public class EditActivityProduct extends AppCompatActivity {
         });
 
 
-        btnOk.setOnClickListener(new View.OnClickListener() {
+        btnEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ContentValues values = new ContentValues();
@@ -67,8 +68,8 @@ public class EditActivityProduct extends AppCompatActivity {
         edtOptC = findViewById(R.id.edtOptC);
         edtOptD = findViewById(R.id.edtOptD);
         edtAnswer = findViewById(R.id.edtanswer);
-        btnOk = findViewById(R.id.btnOK);
-        btnCancel = findViewById(R.id.btnCancel);
+        btnEdit = findViewById(R.id.btnEdit);
+        btnCancel = findViewById(R.id.btnCancelEdit);
 
         edtquestion.setText(ListDatabase.selectedTQuestions.getQuestion());
         edtOptA.setText(ListDatabase.selectedTQuestions.getOptA());
