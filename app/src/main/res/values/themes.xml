@@ -10,4 +10,6 @@
     <string name="quit">Quit</string>
     <string name="next">Next</string>
     <string name="cancel">✖</string>
+    <string name="ending">You have completed quiz app. You are excellent!</string>
+    <string name="losing">You lost!</string>
 </resources>

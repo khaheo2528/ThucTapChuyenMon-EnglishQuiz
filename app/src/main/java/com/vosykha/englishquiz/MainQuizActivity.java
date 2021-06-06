@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
 import android.view.Window;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,6 +24,7 @@ public class MainQuizActivity extends AppCompatActivity {
 
     FButton buttonA, buttonB, buttonC, buttonD;
     TextView questionText,TQuizText, timeText, resultText, coinText;
+    ImageButton coinImage;
     QuizHelper QuizHelper;
     TQuestions currentQuestion;
     List<TQuestions> list;
@@ -60,6 +62,7 @@ public class MainQuizActivity extends AppCompatActivity {
         timeText.setTypeface(tb);
         resultText.setTypeface(sb);
         coinText.setTypeface(tb);
+
 
         //hàm Database helper
         QuizHelper = new QuizHelper(this);
@@ -129,6 +132,16 @@ public class MainQuizActivity extends AppCompatActivity {
 
     }
 
+    //thiết lập sự kiện hint
+//    public void  Hint(View view) {
+//        coinImage = (ImageButton) findViewById(R.id.coinImage);
+//        if (coinValue >= 1 ){
+//            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+//            builder.setTitle("Hint");
+//            builder.setMessage("Your answer "+ currentQuestion.getAnswer());
+//        }
+//
+//    }
     //thiết lập sự kiện cho button A
     public void buttonA(View view){
         //so sánh lựa chọn với kết quả nếu đúng nút sẽ đổi màu xanh

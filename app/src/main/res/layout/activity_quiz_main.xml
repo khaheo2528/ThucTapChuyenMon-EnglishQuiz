@@ -22,7 +22,7 @@
             <ImageView
                 android:id="@+id/coinImage"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:src="@drawable/coin" />
 
             <TextView
@@ -107,6 +107,8 @@
             android:layout_height="36dp"
             android:layout_margin="10dp"
             android:onClick="buttonA"
+            android:textSize="24dp"
+            android:backgroundTint="#00BCD4"
             android:text=""
             android:textColor="@color/grey"/>
 
@@ -115,6 +117,8 @@
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:layout_margin="10dp"
+            android:textSize="24dp"
+            android:backgroundTint="#00BCD4"
             android:onClick="buttonB"
             android:text=""
             android:textColor="@color/grey" />
@@ -125,6 +129,8 @@
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:layout_margin="10dp"
+            android:textSize="24dp"
+            android:backgroundTint="#00BCD4"
             android:onClick="buttonC"
             android:text=""
             android:textColor="@color/grey" />
@@ -134,6 +140,8 @@
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:layout_margin="10dp"
+            android:textSize="24dp"
+            android:backgroundTint="#00BCD4"
             android:onClick="buttonD"
             android:text=""
             android:textColor="@color/grey" />

@@ -1,5 +1,6 @@
 package com.vosykha.englishquiz;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.facebook.CallbackManager;
@@ -102,6 +104,7 @@ public class HomeScreen extends AppCompatActivity{
         Typeface typeface = Typeface.createFromAsset(getAssets(),"fonts/shablagooital.ttf");
         playGame.setTypeface(typeface);
         quit.setTypeface(typeface);
+        btnMore.setTypeface(typeface);
         tQ.setTypeface(typeface);
     }
 
@@ -123,8 +126,29 @@ public class HomeScreen extends AppCompatActivity{
         quit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
+                AlertDialog.Builder builder = new AlertDialog.Builder(HomeScreen.this);
+                builder.setTitle("Exit");
+                builder.setMessage("Are you sure you want to exit?");
+                builder.setIcon(android.R.drawable.ic_delete);
+                builder.setCancelable(false);
+                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        HomeScreen.this.finish();
+                    }
+                });
+
+                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
+
             }
+
         });
 
         btnMore.setOnClickListener(new View.OnClickListener() {
