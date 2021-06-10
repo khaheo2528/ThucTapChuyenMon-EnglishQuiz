@@ -18,6 +18,8 @@ import com.facebook.FacebookException;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
+import com.google.firebase.auth.FirebaseAuth;
+import com.vosykha.englishquiz.register.Login;
 
 import java.util.Arrays;
 
@@ -28,8 +30,7 @@ public class HomeScreen extends AppCompatActivity{
     TextView tQ;
 
 
-    //firebase và Facebook login
-    //private FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+
     private CallbackManager fbCallbackManager;
     private LoginButton btnLoginFacebook;
     private static String TAG_FACEBOOK_LOGIN = "FACEBOOK LOGIN";
@@ -159,5 +160,11 @@ public class HomeScreen extends AppCompatActivity{
                 finish();
             }
         });
+    }
+
+    public void logout(View view) {
+        FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(getApplicationContext(), Login.class));
+        finish();
     }
 }

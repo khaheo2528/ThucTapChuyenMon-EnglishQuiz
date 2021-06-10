@@ -60,7 +60,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Made by Zed"
-
             android:textColor="@color/red"
             android:textSize="14dp" />
 

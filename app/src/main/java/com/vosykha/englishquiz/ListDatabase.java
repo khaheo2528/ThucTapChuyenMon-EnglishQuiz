@@ -33,9 +33,9 @@ public class ListDatabase extends AppCompatActivity {
     private static final String DB_NAME ="TQuiz.db";
     public static final String DB_PATH_SUFFIX = "/databases/";
     public static SQLiteDatabase database = null;
-
     ListView LvDatabase;
     ArrayAdapter<TQuestions> adapter;
+
 
     DecimalFormat currency = new DecimalFormat("###.###");
 
@@ -106,6 +106,7 @@ public class ListDatabase extends AppCompatActivity {
                 if(copyDBFromAsset())
                     Toast.makeText(ListDatabase.this,
                             "Copy database successful", Toast.LENGTH_SHORT).show();
+
             }else {
                 Toast.makeText(ListDatabase.this,
                         "Copy database fail!", Toast.LENGTH_SHORT).show();
@@ -113,6 +114,8 @@ public class ListDatabase extends AppCompatActivity {
         } catch (Exception e){
             Log.e("Error", e.toString());
         }
+
+
     }
 
     private boolean copyDBFromAsset() {

@@ -20,7 +20,7 @@
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="18dp"
         android:src="@drawable/englishquiz1"/>
 
     <LinearLayout
@@ -32,45 +32,66 @@
             android:id="@+id/btnLoginFacebook"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="25dp"
             android:gravity="center"
-            android:textSize="26dp"
-            android:layout_margin="25dp"/>
+            android:textSize="26dp" />
 
         <info.hoang8f.widget.FButton
             android:id="@+id/playGame"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            fbutton:buttonColor="#21F3EC"
-            android:gravity="center"
             android:layout_marginHorizontal="20dp"
-            fbutton:shadowHeight="10dp"
-            android:textSize="26dp"
             android:layout_marginBottom="16dp"
-            android:text="@string/play_game"/>
-
-        <info.hoang8f.widget.FButton
-            android:id="@+id/quit"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            fbutton:buttonColor="#21F3EC"
             android:gravity="center"
-            android:layout_marginHorizontal="20dp"
-            fbutton:shadowHeight="10dp"
-            android:textSize="30dp"
-            android:text="@string/quit"/>
+            android:text="@string/play_game"
+            android:textSize="26dp"
+            fbutton:buttonColor="#21F3EC"
+            fbutton:shadowHeight="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="22dp"
+            android:gravity="center">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/quit"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center"
+                android:text="Back"
+                android:textSize="26sp"
+                fbutton:buttonColor="#21F3EC"
+                fbutton:shadowHeight="10dp" />
+
+            <info.hoang8f.widget.FButton
+                android:layout_width="178dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center"
+                android:onClick="logout"
+                android:text="Log out"
+                android:textAlignment="center"
+                android:textSize="26sp"
+                android:typeface="serif"
+                fbutton:buttonColor="#21F3EC"
+                fbutton:shadowHeight="10dp" />
+        </LinearLayout>
 
         <info.hoang8f.widget.FButton
             android:id="@+id/btnMore"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            fbutton:buttonColor="#21F3EC"
-            android:gravity="center"
-            android:layout_marginTop="16dp"
             android:layout_marginHorizontal="20dp"
-            fbutton:shadowHeight="10dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="More..."
             android:textSize="30dp"
-            android:text="More..."/>
-<!--            android:onClick="buttonMore"-->
+            fbutton:buttonColor="#21F3EC"
+            fbutton:shadowHeight="10dp" />
+
 
     </LinearLayout>
 

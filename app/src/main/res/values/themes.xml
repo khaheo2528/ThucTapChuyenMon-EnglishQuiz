@@ -12,4 +12,14 @@
     <string name="cancel">✖</string>
     <string name="ending">You have completed quiz app. You are excellent!</string>
     <string name="losing">You lost!</string>
+    <string name="login">Login in your new Account</string>
+    <string name="Email">Enter your Email</string>
+    <string name="password">Password</string>
+    <string name="fullname">Full name</string>
+    <string name="m">New here? Create Account</string>
+    <string name="m2">Already Registered? Login here</string>
+    <string name="my_name">Made by Zed</string>
+    <string name="phone">Phone</string>
+    <string name="l">Login</string>
+    <string name="Register">Register</string>
 </resources>
