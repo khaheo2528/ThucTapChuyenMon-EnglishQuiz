@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Product"
+        android:text="@string/add"
         android:textStyle="bold"
         android:textColor="#BAD5D8ED"
         android:textSize="30dp"

@@ -22,4 +22,6 @@
     <string name="phone">Phone</string>
     <string name="l">Login</string>
     <string name="Register">Register</string>
+    <string name="add">Add Question</string>
+    <string name="edit">Edit Question</string>
 </resources>

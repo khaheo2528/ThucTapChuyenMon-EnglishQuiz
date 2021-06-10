@@ -8,12 +8,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Edit Tasks"
+        android:text="@string/edit"
         android:textSize="36sp"
         android:gravity="center"
         android:padding="10dp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold"        />
 
     <EditText
         android:id="@+id/edtquestion"
